@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Men Pink T-shirt ",
+    "category": "Shirt",
+    "image": "/s1.jpg",
+    "additionalimage" :["/ss1.jpg"],
+    "price": "5000",
+    "shortdesc": "Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque commodo mus; porta nullam morbi posuere. Litora erat tincidunt integer mollis nunc. ",
+    "Decription": "Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque commodo mus; porta nullam morbi posuere. Litora erat tincidunt integer mollis nunc. Hac fames iaculis blandit erat fermentum vivamus. Ante nunc venenatis lectus vehicula blandit semper. Iaculis eu pretium convallis pretium ultricies eleifend cras quam. Hendrerit aptent elit mattis inceptos nisi vel justo. Dictumst sem nisi vestibulum; facilisi quam imperdiet. Velit maximus lobortis lacinia posuere arcu duis potenti euismod."
+  },
+  {
+    "title": "Men Winter T-shirt ",
+    "category": "Shirt",
+    "image": "/s2.jpg",
+    "additionalimage" :["/ss2.jpg"],
+    "price": "5000",
+    "shortdesc": "Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque commodo mus; porta nullam morbi posuere. Litora erat tincidunt integer mollis nunc. ",
+    "Decription": "Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque commodo mus; porta nullam morbi posuere. Litora erat tincidunt integer mollis nunc. Hac fames iaculis blandit erat fermentum vivamus. Ante nunc venenatis lectus vehicula blandit semper. Iaculis eu pretium convallis pretium ultricies eleifend cras quam. Hendrerit aptent elit mattis inceptos nisi vel justo. Dictumst sem nisi vestibulum; facilisi quam imperdiet. Velit maximus lobortis lacinia posuere arcu duis potenti euismod."
+  },
+  {
+    "title": "Men Winter Hoodie ",
+    "category": "Hoodie",
+    "image": "/s3.jpg",
+    "additionalimage" :["/ss3.jpg"],
+    "price": "5000",
+    "shortdesc": "Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque commodo mus; porta nullam morbi posuere. Litora erat tincidunt integer mollis nunc. ",
+    "Decription": "Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque commodo mus; porta nullam morbi posuere. Litora erat tincidunt integer mollis nunc. Hac fames iaculis blandit erat fermentum vivamus. Ante nunc venenatis lectus vehicula blandit semper. Iaculis eu pretium convallis pretium ultricies eleifend cras quam. Hendrerit aptent elit mattis inceptos nisi vel justo. Dictumst sem nisi vestibulum; facilisi quam imperdiet. Velit maximus lobortis lacinia posuere arcu duis potenti euismod."
+  },
+  {
+    "title": "Men Blue Jeans ",
+    "category": "Jeans",
+    "image": "/s4.jpg",
+    "additionalimage" :["/ss4.jpg"],
+    "price": "5000",
+    "shortdesc": "Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque commodo mus; porta nullam morbi posuere. Litora erat tincidunt integer mollis nunc. ",
+    "Decription": "Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque commodo mus; porta nullam morbi posuere. Litora erat tincidunt integer mollis nunc. Hac fames iaculis blandit erat fermentum vivamus. Ante nunc venenatis lectus vehicula blandit semper. Iaculis eu pretium convallis pretium ultricies eleifend cras quam. Hendrerit aptent elit mattis inceptos nisi vel justo. Dictumst sem nisi vestibulum; facilisi quam imperdiet. Velit maximus lobortis lacinia posuere arcu duis potenti euismod."
+  },
+  {
+    "title": "Men Windcheater ",
+    "category": "Jacket",
+    "image": "/s5.jpg",
+    "additionalimage" :["/ss5.jpg"],
+    "price": "5000",
+    "shortdesc": "Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque commodo mus; porta nullam morbi posuere. Litora erat tincidunt integer mollis nunc. ",
+    "Decription": "Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque commodo mus; porta nullam morbi posuere. Litora erat tincidunt integer mollis nunc. Hac fames iaculis blandit erat fermentum vivamus. Ante nunc venenatis lectus vehicula blandit semper. Iaculis eu pretium convallis pretium ultricies eleifend cras quam. Hendrerit aptent elit mattis inceptos nisi vel justo. Dictumst sem nisi vestibulum; facilisi quam imperdiet. Velit maximus lobortis lacinia posuere arcu duis potenti euismod."
+  },
+  {
+    "title": "Men Stylish T-shirt ",
+    "category": "T-shirt",
+    "image": "/s6.jpg",
+    "additionalimage" :["/ss6.jpg"],
+    "price": "5000",
+    "shortdesc": "Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque commodo mus; porta nullam morbi posuere. Litora erat tincidunt integer mollis nunc. ",
+    "Decription": "Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque commodo mus; porta nullam morbi posuere. Litora erat tincidunt integer mollis nunc. Hac fames iaculis blandit erat fermentum vivamus. Ante nunc venenatis lectus vehicula blandit semper. Iaculis eu pretium convallis pretium ultricies eleifend cras quam. Hendrerit aptent elit mattis inceptos nisi vel justo. Dictumst sem nisi vestibulum; facilisi quam imperdiet. Velit maximus lobortis lacinia posuere arcu duis potenti euismod."
+  }
+]
