@@ -39,7 +39,7 @@ export default function Footer() {
 
 
         </div>
-        <div className='w-full mt-8 text-lg  pt-4 border-t border-white color'><p className='text-center'>© Furni 2024 | All Rights Reserved | Design By Xcel B2B </p></div>
+        <div className='w-full mt-8 text-lg  pt-4 border-t border-white color'><p className='text-center'>© Cloth 2024 | All Rights Reserved | Design By Xcel B2B </p></div>
       </Wrapper>
     </div>
   )

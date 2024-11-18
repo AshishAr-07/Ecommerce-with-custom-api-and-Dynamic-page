@@ -2,6 +2,7 @@ import React from "react";
 import { Banner } from "./_components/Banner";
 import Cta from "./_components/Cta";
 import Product from "./_components/Product";
+import WhyChoose from "./_components/WhyChoose";
 
 const items = [
   {
@@ -23,6 +24,7 @@ export default function page() {
     <>
       <Banner items={items} />
       <Cta />
+      <WhyChoose/>
       <Product activepage="homepage" />
     </>
   );
