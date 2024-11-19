@@ -3,6 +3,8 @@ import { Banner } from "./_components/Banner";
 import Cta from "./_components/Cta";
 import Product from "./_components/Product";
 import WhyChoose from "./_components/WhyChoose";
+import { LayoutGridDemo } from "./_components/LayoutGridDemo";
+import FAQSection from "./_components/Faq";
 
 const items = [
   {
@@ -19,13 +21,17 @@ const items = [
   },
 ];
 
+
+
 export default function page() {
   return (
     <>
       <Banner items={items} />
       <Cta />
-      <WhyChoose/>
+      <WhyChoose />
+      <LayoutGridDemo/>
       <Product activepage="homepage" />
+      <FAQSection/>
     </>
   );
 }

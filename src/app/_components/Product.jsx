@@ -19,7 +19,7 @@ export default function Product({activepage = "product"}) {
      }
    Products()
     },[])
-    console.log(Data[0]?.additionalimage)
+    
   return (
     <>
     <Wrapper>
