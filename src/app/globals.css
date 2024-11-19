@@ -12,6 +12,10 @@
 .hover-color{
   color: #2C4152;
 }
+.btn-color{
+  color: white;
+  background-color:#2C4152 ;
+}
 
 body {
   font-family: var(--font-assistant);

@@ -29,11 +29,12 @@ export default function page() {
     <>
       <Banner items={items} />
       <LayoutGridDemo/>
-      <WhyChoose />
+      <WhyChoose activepage="home" />
       <Product activepage="homepage" />
       <Testimonial/>
       <Cta />
       <FAQSection/>
+      <div className="py-8"></div>
     </>
   );
 }

@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import Wrapper from './Wrapper';
 
 export default function Cta() {
   return (
-    <div className="py-16 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="relative overflow-hidden bg-gradient-to-r from-[#2C4152] to-indigo-600 rounded-2xl">
+   
+       <Wrapper>
+         <div className="relative overflow-hidden bg-gradient-to-r from-[#2C4152] to-indigo-600 rounded-2xl">
           {/* Background Pattern */}
           <div className="absolute inset-0">
             <div className="absolute inset-0 bg-black opacity-10"></div>
@@ -40,9 +41,7 @@ export default function Cta() {
             </div>
           </div>
         </div>
+       </Wrapper>
 
-       
-      </div>
-    </div>
   );
 }

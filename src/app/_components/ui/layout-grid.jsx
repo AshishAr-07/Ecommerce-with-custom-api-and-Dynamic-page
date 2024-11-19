@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import Wrapper from "../Wrapper";
 
 export const LayoutGrid = ({
   cards
@@ -17,7 +18,11 @@ export const LayoutGrid = ({
   };
 
   return (
-    (<div
+    (
+    
+   <>
+  <Wrapper classname="w-full text-center py-6"> <h1 className="text-6xl">Explore Our New Collections</h1></Wrapper>
+    <div
       className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
@@ -41,7 +46,8 @@ export const LayoutGrid = ({
           selected?.id ? "pointer-events-auto" : "pointer-events-none"
         )}
         animate={{ opacity: selected?.id ? 0.3 : 0 }} />
-    </div>)
+    </div>
+   </>)
   );
 };
 
