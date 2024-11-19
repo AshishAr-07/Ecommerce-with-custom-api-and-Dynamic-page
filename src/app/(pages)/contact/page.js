@@ -1,9 +1,30 @@
 "use client";
-
 import Wrapper from "@/app/_components/Wrapper";
 import React from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { LuPhone, LuMail } from "react-icons/lu";
+
+
+const contactMethods = [
+  {
+    icon: <LuPhone className="hover-color group-hover:scale-110 transition-transform duration-300" size={52} />,
+    title: "Give us a Call",
+    info: "+91-9870175083",
+    
+  },
+  {
+    icon: <LuMail className="hover-color group-hover:scale-110 transition-transform duration-300" size={52} />,
+    title: "Give us a Line",
+    info: "hello@domain.com",
+    
+  },
+  {
+    icon: <IoLocationOutline className="hover-color group-hover:scale-110 transition-transform duration-300" size={52} />,
+    title: "Visit Us",
+    info: "641, Satya the Hive",
+   
+  }
+];
 
 export default function Component() {
   const handleSubmit = (event) => {
@@ -22,23 +43,41 @@ export default function Component() {
 
   return (
     <Wrapper>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-12">
-<section className="flex flex-col gap-2 border-e py-2 justify-center items-center">
-    <LuPhone size={52}/>
-<h1 className="mt-2 text-2xl">Give us a Call</h1>
-<p>+91-9870175083</p>
-</section>
-<section className="flex flex-col gap-2 border-e py-2 justify-center items-center">
-    <LuMail size={52}/>
-<h1 className="mt-2 text-2xl">Give us a Line</h1>
-<p>hello@domain.com</p>
-</section>
-<section className="flex flex-col gap-2  py-2 justify-center items-center">
-    <IoLocationOutline size={52}/>
-<h1 className="mt-2 text-2xl"> Visit Us</h1>
-<p>641 ,Satya the Hive</p>
-</section>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8  mb-16">
+          {contactMethods.map((method, index) => (
+            <a 
+              href={method.link}
+              key={index}
+              className="group relative bg-white rounded-xl p-8 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1"
+            >
+              {/* Hover overlay */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+              
+              {/* Content */}
+              <div className="relative flex flex-col items-center text-center gap-4">
+                {/* Icon container */}
+                <div className="relative">
+                  <div className="absolute -inset-4  rounded-full opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                  {method.icon}
+                </div>
 
+                {/* Text content */}
+                <div className="space-y-2">
+                  <h3 className="text-2xl ">
+                    {method.title}
+                  </h3>
+                  <p className=" font-medium">
+                    {method.info}
+                  </p>
+                  
+                 
+                </div>
+
+                
+              </div>
+            </a>
+          ))}
         </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <section>
@@ -107,7 +146,7 @@ export default function Component() {
             </div>
             <button
               type="submit"
-              className="xcel-btn-color w-full text-white text-xl  py-2 px-4 rounded-lg  transition-colors"
+              className="w-full text-white text-xl  py-2 px-4 rounded-lg  transition-colors"
             >
               Submit
             </button>
