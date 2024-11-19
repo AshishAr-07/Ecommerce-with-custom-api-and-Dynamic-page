@@ -5,6 +5,7 @@ import Product from "./_components/Product";
 import WhyChoose from "./_components/WhyChoose";
 import { LayoutGridDemo } from "./_components/LayoutGridDemo";
 import FAQSection from "./_components/Faq";
+import Testimonial from "./_components/Testinomial";
 
 const items = [
   {
@@ -27,10 +28,11 @@ export default function page() {
   return (
     <>
       <Banner items={items} />
-      <Cta />
-      <WhyChoose />
       <LayoutGridDemo/>
+      <WhyChoose />
       <Product activepage="homepage" />
+      <Testimonial/>
+      <Cta />
       <FAQSection/>
     </>
   );
