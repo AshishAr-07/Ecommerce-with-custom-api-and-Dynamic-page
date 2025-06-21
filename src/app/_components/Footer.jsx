@@ -13,7 +13,7 @@ export default function Footer() {
       <Wrapper className='pb-0'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-12 py-2 '>
           <section className='flex flex-col gap-2 color'>
-            <Link href='/'><Image width={150} height={50} alt='logo' src="/logo.png" /></Link>
+            <h1 className='uppercase text-white text-3xl font-bold'>Cloth</h1>
             <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.veniam quaerat vitae iure aliquid nam officiis.</h2>
             <div className='flex gap-2 mt-2'>
 <Link href='#'><span><FaInstagram size={22}  /></span></Link>
@@ -23,8 +23,8 @@ export default function Footer() {
           </section>
           <section className='flex flex-col gap-6 mt-6 color'>
             
-            <h2 className='flex gap-5 items-center'><IoLocationOutline size={28} /> 641, Satya The Hive</h2>
-            <h2 className='flex gap-5 items-center'><LuPhone size={25} /> +91 9870175083</h2>
+            <h2 className='flex gap-5 items-center'><IoLocationOutline size={28} /> Delhi</h2>
+            <h2 className='flex gap-5 items-center'><LuPhone size={25} /> +91 9999999999</h2>
             <h2 className='flex gap-5 items-center'><LuMail size={25} /> hello@domain.com</h2>
 
           </section>
@@ -39,7 +39,7 @@ export default function Footer() {
 
 
         </div>
-        <div className='w-full mt-8 text-lg  pt-4 border-t border-white color'><p className='text-center'>© Cloth 2024 | All Rights Reserved | Design By Xcel B2B </p></div>
+        <div className='w-full mt-8 text-lg  pt-4 border-t border-white color'><p className='text-center'>© Cloth 2024 | All Rights Reserved </p></div>
       </Wrapper>
     </div>
   )
