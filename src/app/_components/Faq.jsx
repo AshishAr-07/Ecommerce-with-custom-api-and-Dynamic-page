@@ -33,7 +33,7 @@ const FAQSection = () => {
           <ol className="list-decimal pl-4">
             <li>Log into your account</li>
             <li>Find your order</li>
-            <li>Select "Start Return"</li>
+            <li>Select Start Return</li>
             <li>Follow the instructions to print your return label</li>
           </ol>
         )
