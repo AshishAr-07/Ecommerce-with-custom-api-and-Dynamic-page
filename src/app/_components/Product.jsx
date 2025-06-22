@@ -1,11 +1,29 @@
-'use client'
+'use client';
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { fetchProducts } from '@/Api'
 import Wrapper from '@/app/_components/Wrapper'
-import { metronome } from 'ldrs'
-metronome.register()
+
+const Loader = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Only import and register in the browser
+    import('ldrs').then(({ metronome }) => {
+      metronome.register();
+      setIsLoading(false);
+    });
+  }, []);
+
+  // Return a placeholder or the actual loader based on loading state
+  return (
+    <div className="w-full h-screen flex justify-center items-center">
+      {!isLoading && <l-metronome size="40" speed="1.6" color="black"></l-metronome>}
+      {isLoading && <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>}
+    </div>
+  );
+};
 
 export default function Product({ activepage = "product" }) {
 
@@ -22,14 +40,13 @@ export default function Product({ activepage = "product" }) {
     Products()
   }, [])
 
+  if (Loading) {
+    return <Loader />;
+  }
+
   return (
     <>
       <Wrapper>
-        {Loading && (<div className="w-full h-screen flex justify-center items-center"><l-metronome
-          size="40"
-          speed="1.6"
-          color="black"
-        ></l-metronome></div>)}
         <h1 className='w-full text-center text-6xl pb-12'>{activepage === "homepage" ? "Featured Products" : "All Products"} </h1>
         <div className='grid relative grid-cols-1 md:grid-cols-2 md:px-4 lg:grid-cols-4 gap-6'>
           {FeaturedProduct.map((items, index) => (

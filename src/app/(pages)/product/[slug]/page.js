@@ -12,12 +12,28 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { fetchProducts } from "@/Api";
 import Link from "next/link";
-import { metronome } from 'ldrs'
-metronome.register()
+import { fetchProducts } from "@/Api";
 
+// Create a client-side only loader component
+const Loader = () => {
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    // Only import and register in the browser
+    import('ldrs').then(({ metronome }) => {
+      metronome.register();
+      setIsLoading(false);
+    });
+  }, []);
+
+  return (
+    <div className="w-full h-screen flex justify-center items-center">
+      {!isLoading && <l-metronome size="40" speed="1.6" color="black"></l-metronome>}
+      {isLoading && <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>}
+    </div>
+  );
+};
 
 export default function ProductPage() {
   const [products, setProducts] = useState([]);
@@ -65,11 +81,7 @@ export default function ProductPage() {
   );
 
   if (products.length === 0 || !mainImage) {
-    return <div className="w-full h-screen flex justify-center items-center"><l-metronome
-    size="40"
-    speed="1.6" 
-    color="black" 
-  ></l-metronome></div>;
+    return <Loader />;
   }
 
   return (
